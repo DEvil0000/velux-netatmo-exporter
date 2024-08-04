@@ -38,16 +38,16 @@ def getBaseUrl():
     return "https://app.velux-active.com"
 
 def getMail():
-    return os.environ['MAIL']
+    return os.environ['VELUX_MAIL']
 
 def getPassword():
-    return os.environ['PASSWORD']
+    return os.environ['VELUX_PASSWORD']
 
 def getClientID():
-    return os.environ['CLIENTID']
+    return os.environ['VELUX_CLIENTID']
 
 def getClientSecret():
-    return os.environ['CLIENTSECRET']
+    return os.environ['VELUX_CLIENTSECRET']
 
 def getToken():
     data = {
