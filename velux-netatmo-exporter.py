@@ -225,7 +225,7 @@ if __name__ == '__main__':
             if 'humidity' in room:
                 humidity_metric.labels(room['id'], room['name']).set(room['humidity'])
             if 'temperature' in room:
-                temperature_metric.labels(room['id'], room['name']).set(room['temperature'])
+                temperature_metric.labels(room['id'], room['name']).set(room['temperature']/10)
             if 'algo_status' in room:
                 #TODO should maybe be enum
                 algo_status_metric.labels(room['id'], room['name']).set(room['algo_status'])
